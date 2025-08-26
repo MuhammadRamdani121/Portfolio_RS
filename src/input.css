@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.text-indent {
+    text-indent: 1rem;
+    /* Atau sesuaikan ukuran indentasinya */
+}
+
+.text-indent-lg {
+    text-indent: 2.5rem;
+    /* Atau sesuaikan ukuran indentasinya */
+}
