@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Tailwind CSS</title>
+    <link href="src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="px-4 sm:px-6 flex justify-between items-center text-white bg-[#1A1A1A]">
+        <img class="w-14 h-12" src="src/img/Logo.png" alt="Logo" />
+
+        <!-- Menu Desktop -->
+        <nav class="hidden md:flex space-x-4 text-md">
+            <a href="#">Tentang Saya</a>
+            <a href="#">Kegiatan</a>
+            <a href="#">Kontak</a>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="max-h-0 opacity-0 overflow-hidden absolute top-[48px] left-0 w-full bg-gray-800 text-white transition-all duration-500 ease-in-out flex-col z-40">
+        <a href="#" class="block px-4 py-3 text-lg hover:bg-gray-700">Tentang Saya</a>
+        <a href="#" class="block px-4 py-3 text-lg hover:bg-gray-700">Kegiatan</a>
+        <a href="#" class="block px-4 py-3 text-lg hover:bg-gray-700">Kontak</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="px-4 sm:px-6 pt-10">
+        <!-- Section 1: Tentang Kami -->
+        <section class="flex flex-col gap-4">
+            <h2 class="bg-gray-200/70 rounded-lg text-center font-bold text-3xl py-2">Tentang Kami</h2>
+
+            <div class="flex justify-center bg-gray-200/70 p-6 rounded-lg">
+                <img src="src/img/Logo.png" alt="Logo" class="w-40 h-auto mx-auto" />
+            </div>
+
+            <div class="bg-gray-200/70 rounded-2xl text-black p-4">
+                <p class="text-lg font-extrabold mb-2">Sejarah Kami</p>
+                <p class="text-justify text-base leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit aliquam quisquam sit explicabo
+                    odio
+                    eius aut harum adipisci itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab
+                    perferendis, alias excepturi saepe consectetur atque accusantium itaque placeat repellendus.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 2: Visi & Misi -->
+        <section class="bg-gray-200/70 mt-8 pt-4 pb-6 rounded-2xl">
+            <h1 class="text-2xl font-bold text-center">VISI & MISI</h1>
+
+            <div class="flex flex-col gap-y-6 mt-4">
+                <!-- Visi -->
+                <div class="bg-amber-200 mx-4 sm:mx-6 px-4 py-4 rounded-2xl">
+                    <h2 class="text-center text-lg font-semibold mb-2">Visi</h2>
+                    <ol class="list-decimal space-y-2 text-justify leading-relaxed pl-5">
+                        <li>Menjadi wadah utama bagi pemuda untuk berkembang, berinovasi, dan berkontribusi dalam
+                            pembangunan sosial, ekonomi, dan budaya di tingkat lokal maupun nasional.</li>
+                        <li>Menghasilkan generasi muda yang berdaya saing, berwawasan luas, serta memiliki semangat
+                            kebersamaan untuk kemajuan bangsa.</li>
+                        <li>Menjadi organisasi yang mempersatukan dan memberdayakan pemuda untuk menjadi agen perubahan
+                            yang inspiratif dan berdampak luas.</li>
+                    </ol>
+                </div>
+
+                <!-- Misi -->
+                <div class="bg-red-400 mx-4 sm:mx-6 px-4 py-4 rounded-2xl">
+                    <h2 class="text-center text-lg font-semibold mb-2">Misi</h2>
+                    <ol class="list-decimal space-y-2 text-justify leading-relaxed pl-5">
+                        <li>Meningkatkan kapasitas dan kualitas pemuda melalui pendidikan, pelatihan, dan pengembangan
+                            keterampilan.</li>
+                        <li>Mendorong partisipasi aktif pemuda dalam kegiatan sosial, budaya, dan pembangunan di
+                            masyarakat.</li>
+                        <li>Menjalin kerja sama dengan berbagai pihak untuk membuka peluang dan ruang bagi pemuda dalam
+                            berbagai bidang.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Galeri -->
+        <section class="mt-20">
+            <h1 class="text-3xl font-bold text-center mb-10">Galeri Foto Organisasi</h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+                <!-- Galeri Card -->
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <!-- Ulangi gambar lainnya -->
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Andre.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script Toggle Menu -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle("max-h-0");
+            menu.classList.toggle("opacity-0");
+            menu.classList.toggle("max-h-screen");
+            menu.classList.toggle("opacity-100");
+        });
+    </script>
+</body>
+
+</html>
