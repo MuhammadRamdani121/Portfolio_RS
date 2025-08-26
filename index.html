@@ -15,9 +15,11 @@
 
         <!-- Menu Desktop -->
         <nav class="hidden md:flex space-x-4 text-md">
-            <a href="#">Tentang Saya</a>
-            <a href="#">Kegiatan</a>
-            <a href="#">Kontak</a>
+            <a href="#TentangKami">Tentang Kami</a>
+            <a href="#VisiMisi">Visi & Misi</a>
+            <a href="#GaleriKegiatan">Galeri Kegiatan</a>
+            <a href="#GaleriFoto">Galeri Personil</a>
+            <a href="#Kontak">Kontak</a>
         </nav>
 
         <!-- Hamburger Button -->
@@ -40,33 +42,62 @@
     <!-- Main Content -->
     <main class="px-4 sm:px-6 pt-10">
         <!-- Section 1: Tentang Kami -->
-        <section class="flex flex-col gap-4">
-            <h2 class="bg-gray-200/70 rounded-lg text-center font-bold text-3xl py-2">Tentang Kami</h2>
+        <section id="TentangKami" class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col gap-8">
+            <!-- Judul -->
+            <h2 class="bg-gradient-to-r to-gray-300/70 text-gray-800 
+             rounded-xl text-center font-bold text-2xl md:text-3xl lg:text-4xl 
+             py-3 shadow">
+                Tentang Kami
+            </h2>
 
-            <div class="flex justify-center bg-gray-200/70 p-6 rounded-lg">
-                <img src="src/img/Logo.png" alt="Logo" class="w-40 h-auto mx-auto" />
-            </div>
+            <!-- Grid Logo + Sejarah -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Logo -->
+                <div class="flex justify-center items-center">
+                    <div class="bg-white  min-w-[500px] min-h-[250px] max-w-sm">
+                        <img src="src/img/Logo.png" alt="Logo" class="w-75 md:w-75 h-auto mx-auto" />
+                    </div>
+                </div>
 
-            <div class="bg-gray-200/70 rounded-2xl text-black p-4">
-                <p class="text-lg font-extrabold mb-2">Sejarah Kami</p>
-                <p class="text-justify text-base leading-relaxed text-indent-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil fugit aliquam quisquam sit explicabo
-                    odio
-                    eius aut harum adipisci itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ab
-                    perferendis, alias excepturi saepe consectetur atque accusantium itaque placeat repellendus.
-                </p>
+                <!-- Card Sejarah -->
+                <div class="bg-white/90 rounded-2xl shadow-md hover:shadow-lg transition p-6 md:p-8 min-h-[300px]">
+                    <p
+                        class="text-2xl  md:text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2 flex items-center justify-center gap-2">
+                        <!-- Icon buku -->
+                        Sejarah
+                    </p>
+                    <p class="text-justify text-sm md:text-base leading-relaxed text-gray-700 text-indent-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nihil consequuntur quas nam,
+                        impedit, alias possimus, vitae expedita facere eaque reprehenderit voluptas fugiat tenetur? Nam
+                        sed qui ad in excepturi sequi magni molestiae, iusto harum similique pariatur error quo.
+                        Dolorum, laborum officia accusamus recusandae quos rem debitis, accusantium quis possimus
+                        obcaecati perferendis ab repudiandae ipsam! Suscipit illum iure voluptas tempora porro maiores
+                        laudantium incidunt reprehenderit, provident libero tempore, rem autem molestias, eos quasi
+                        sequi harum eaque repudiandae necessitatibus? Tenetur aliquid quidem magnam ipsum maiores
+                        accusamus, pariatur maxime minima minus deserunt quaerat quod sit, in vero nostrum sed. Et,
+                        sapiente omnis.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Section 2: Visi & Misi -->
-        <section class="bg-gray-200/70 mt-8 pt-4 pb-6 rounded-2xl">
-            <h1 class="text-2xl font-bold text-center">VISI & MISI</h1>
+        <section id="VisiMisi" class="max-w-6xl mx-auto px-4 md:px-8  mt-10 py-8 rounded-2xl shadow">
+            <!-- Judul -->
+            <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6 underline">
+                VISI & MISI
+            </h1>
 
-            <div class="flex flex-col gap-y-6 mt-4">
+            <!-- Grid Visi & Misi -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Visi -->
-                <div class="bg-amber-200 mx-4 sm:mx-6 px-4 py-4 rounded-2xl">
-                    <h2 class="text-center text-lg font-semibold mb-2">Visi</h2>
-                    <ol class="list-decimal space-y-2 text-justify leading-relaxed pl-5">
+                <div class="bg-amber-200/90 rounded-2xl shadow-md hover:shadow-lg transition px-6 py-6">
+                    <h2
+                        class="text-center text-lg md:text-xl font-semibold mb-4 text-gray-800 border-b border-amber-400 pb-2">
+                        Visi
+                    </h2>
+                    <ol
+                        class="list-decimal space-y-3 text-justify leading-relaxed pl-5 text-gray-700 text-sm md:text-base">
                         <li>Menjadi wadah utama bagi pemuda untuk berkembang, berinovasi, dan berkontribusi dalam
                             pembangunan sosial, ekonomi, dan budaya di tingkat lokal maupun nasional.</li>
                         <li>Menghasilkan generasi muda yang berdaya saing, berwawasan luas, serta memiliki semangat
@@ -77,9 +108,13 @@
                 </div>
 
                 <!-- Misi -->
-                <div class="bg-red-400 mx-4 sm:mx-6 px-4 py-4 rounded-2xl">
-                    <h2 class="text-center text-lg font-semibold mb-2">Misi</h2>
-                    <ol class="list-decimal space-y-2 text-justify leading-relaxed pl-5">
+                <div class="bg-red-400/90 rounded-2xl shadow-md hover:shadow-lg transition px-6 py-6">
+                    <h2
+                        class="text-center text-lg md:text-xl font-semibold mb-4 text-white border-b border-red-600 pb-2">
+                        Misi
+                    </h2>
+                    <ol
+                        class="list-decimal space-y-3 text-justify leading-relaxed pl-5 text-white text-sm md:text-base">
                         <li>Meningkatkan kapasitas dan kualitas pemuda melalui pendidikan, pelatihan, dan pengembangan
                             keterampilan.</li>
                         <li>Mendorong partisipasi aktif pemuda dalam kegiatan sosial, budaya, dan pembangunan di
@@ -91,9 +126,54 @@
             </div>
         </section>
 
-        <!-- Section 3: Galeri -->
-        <section class="mt-20">
-            <h1 class="text-3xl font-bold text-center mb-10">Galeri Foto Organisasi</h1>
+        <!--  Start Section 3-->
+        <section id="GaleriKegiatan" class="mt-20">
+            <h1 class="text-3xl font-bold text-center mb-10 underline">Galeri Kegiatan</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+                <!-- Galeri Card -->
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba1.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Ketua</p>
+                </div>
+
+                <!-- Ulangi gambar lainnya -->
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba2.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Wakil</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba3.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Bendahara 1</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba4_103930.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Bendahara 2</p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba5_122348.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[320px] max-h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Sekretaris </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="src/img/Kegiatan/Kegiatan_Lomba6.jpg" alt="Ketua"
+                        class="rounded-lg shadow-md w-full max-w-[350px] h-auto object-cover bg-gray-100" />
+                    <p class="mt-2 text-center text-gray-700">Seksi Gelap</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Section 4 -->
+
+        <!-- Start Section 4 -->
+        <section id="GaleriFoto" class="mt-20">
+            <h1 class="text-3xl font-bold text-center mb-10 underline">Galeri Foto Personil </h1>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
                 <!-- Galeri Card -->
@@ -135,6 +215,96 @@
                 </div>
             </div>
         </section>
+        <!-- End Section 4 -->
+
+        <!-- Start Section 5 -->
+
+        <section id="Kontak" class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-10 underline">Hubungi Kami</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+                <!-- Google Maps -->
+                <div class="w-full h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1756214430986!6m8!1m7!1s8tiTOkhO2dKSPGQ8IKx7vg!2m2!1d-6.336197005940695!2d106.7087095921457!3f193.17530753659202!4f-17.50659712879039!5f0.7820865974627469"
+                        class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <!-- Info Alamat -->
+                <div class="flex flex-col justify-start bg-white rounded-2xl shadow-lg p-8">
+                    <!-- Judul -->
+                    <h2 class="text-2xl font-semibold text-center mb-6 text-gray-800">Alamat</h2>
+
+                    <!-- Isi alamat -->
+                    <p class="text-gray-600 mb-6 text-center leading-relaxed">
+                        Jl. Swadaya, RT 04 / RW 08 <br>
+                        Pamulang, Kota Tangerang Selatan, Banten, Indonesia
+                    </p>
+
+                    <!-- Kontak -->
+                    <div class="flex justify-center">
+                        <div class="grid grid-cols-[110px_1fr] gap-y-4 gap-x-2 text-gray-700">
+                            <p class="font-medium">Telepon</p>
+                            <p class="hover:text-blue-600 transition">: 0812-3456-7890</p>
+
+                            <p class="font-medium">Email</p>
+                            <p class="hover:text-blue-600 transition">: email@gmail.com</p>
+
+                            <p class="font-medium">Instagram</p>
+                            <p class="hover:text-blue-600 transition">: instagram</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section 5 -->
+
+
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-gray-200 mt-12 rounded-t-2xl">
+            <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Kolom 1: Logo & Deskripsi -->
+                <div class="flex flex-col items-center md:items-center">
+                    <img src="src/img/Logo.png" alt="Logo" class="w-20 h-16 mb-3">
+                    <h3 class="font-bold text-lg ">Remaja Republic Swad</h3>
+                    <p class="text-sm mt-2 text-gray-400 text-center md:text-justify md:px-4">
+                        Wadah kebersamaan pemuda untuk berkarya, berinovasi, dan membangun bangsa.
+                    </p>
+                </div>
+
+                <!-- Kolom 2: Navigasi -->
+                <div class="flex flex-col items-center">
+                    <h4 class="font-semibold text-base mb-3">Navigasi</h4>
+                    <ul class="space-y-2 text-gray-400 text-center">
+                        <li><a href="#TentangKami" class="hover:text-white transition">Tentang Kami</a></li>
+                        <li><a href="#VisiMisi" class="hover:text-white transition">Visi & Misi</a></li>
+                        <li><a href="#GaleriKegiatan" class="hover:text-white transition">Galeri Kegiatan</a></li>
+                        <li><a href="#GaleriFoto" class="hover:text-white transition">Galeri Personil</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolom 3: Kontak -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="font-semibold text-base mb-3">Kontak</h4>
+                    <p class="text-gray-400 text-center px-6">Jl. Swadaya, RT 04 / RW 08, Pamulang, Tangerang
+                        Selatan</p>
+                    <p class="text-gray-400 pt-2">📞 0812-3456-7890</p>
+                    <p class="text-gray-400">✉️ email@gmail.com</p>
+                    <p class="text-gray-400">📷 Instagram</p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
+                © 2025 Organisasi Pemuda. All rights reserved.
+            </div>
+        </footer>
+
     </main>
 
     <!-- Script Toggle Menu -->
