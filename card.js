@@ -1,0 +1,38 @@
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation(); // biar klik button nggak toggle card
+    alert("Lagi Maintance cuy");
+  });
+});
+
+document.querySelectorAll(".galeri-card").forEach((card) => {
+  const imgs = card.querySelectorAll(".galeri-img");
+
+  card.addEventListener("click", () => {
+    card.classList.toggle("aktif");
+
+    if (card.classList.contains("aktif")) {
+      // jadi sejajar
+      imgs[0].style.left = "-1.5rem";
+      imgs[0].style.top = "0";
+
+      imgs[1].style.left = "4rem";
+      imgs[1].style.top = "0";
+
+      imgs[2].style.left = "8rem";
+      imgs[2].style.top = "0";
+    } else {
+      // balik stack
+      imgs[0].style.left = "0";
+      imgs[0].style.top = "1rem";
+
+      imgs[1].style.left = "2rem";
+      imgs[1].style.top = "0";
+
+      imgs[2].style.left = "4rem";
+      imgs[2].style.top = "2rem";
+    }
+  });
+});
