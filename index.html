@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Tailwind CSS</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="bg-white text-gray-900">
@@ -24,7 +30,7 @@
       </nav>
 
       <!-- Hamburger Button -->
-      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <a id="menu-btn" class="md:hidden text-white focus:outline-none">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-9 w-9"
@@ -39,7 +45,7 @@
             d="M4 6h16M4 12h16M4 18h16"
           />
         </svg>
-      </button>
+      </a>
     </header>
 
     <!-- Mobile Menu -->
@@ -72,7 +78,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <!-- Logo -->
           <div class="flex justify-center items-center">
-            <div class="bg-white max-w-sm min-h-[250px] max-w-sm">
+            <div class="bg-white min-h-[250px] max-w-sm">
               <img
                 src="src/img/Logo.png"
                 alt="Logo"
@@ -196,23 +202,15 @@
           <aside class="relative w-[300px] h-[180px] cursor-pointer">
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba1.webp"
-              alt="lomba_1"
-              loading="lazy"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-3 top-4 z-20 transition-all duration-500"
+              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-30 transition-all duration-500"
             />
-
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba2.webp"
-              alt="lomba_2"
-              loading="lazy"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-10 transition-all duration-500"
+              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-20 transition-all duration-500"
             />
-
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba3.webp"
-              loading="lazy"
-              alt="lomba_3"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-21 top-8 z-0 transition-all duration-500"
+              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-10 transition-all duration-500"
             />
           </aside>
 
@@ -220,7 +218,7 @@
             <h2 class="text-xl font-semibold mb-3">Kegiatan Saat Lomba</h2>
             <p class="text-gray-600 mb-4">
               Dokumentasi kegiatan lomba yang penuh semangat, kerja tim, dan
-              kreativitas.
+              antusiasi warga untuk mengikuti acara.
             </p>
             <button
               class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
@@ -237,22 +235,16 @@
           <aside class="relative w-[300px] h-[180px] cursor-pointer">
             <img
               src="src/img/Karnaval/1.webp"
-              alt="Karnaval_1"
-              loading="lazy"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-0 top-4 z-20 transition-all duration-500"
+              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-20 transition-all duration-500"
             />
 
             <img
               src="src/img/Karnaval/2.webp"
-              alt="Karnaval_2"
-              loading="lazy"
               class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-10 transition-all duration-500"
             />
 
             <img
               src="src/img/Karnaval/3.webp"
-              alt="Karnaval_3"
-              loading="lazy"
               class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-0 transition-all duration-500"
             />
           </aside>
@@ -260,8 +252,8 @@
           <div class="flex-1 text-center md:text-left">
             <h2 class="text-xl font-semibold mb-3">Kegiatan Saat Karnaval</h2>
             <p class="text-gray-600 mb-4">
-              Dokumentasi kegiatan lomba yang penuh semangat, kerja tim, dan
-              kreativitas.
+              Dokumentasi kegiatan Karnaval seluruh warga antusiasi dalam
+              mengikuti Karnaval tahunan
             </p>
             <button
               class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
@@ -278,31 +270,24 @@
           <aside class="relative w-[300px] h-[180px] cursor-pointer">
             <img
               src="src/img/Malam Puncak/1.webp"
-              alt="malam_puncak"
-              loading="lazy"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-0 top-4 z-20 transition-all duration-500"
+              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-20 transition-all duration-500"
             />
 
             <img
               src="src/img/Malam Puncak/2.webp"
-              alt="malam_puncak_2"
-              loading="lazy"
               class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-10 transition-all duration-500"
             />
 
             <img
               src="src/img/Malam Puncak/3.webp"
-              alt="malam_puncak_3"
-              loading="lazy"
               class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-0 transition-all duration-500"
             />
           </aside>
 
           <div class="flex-1 text-center md:text-left">
-            <h2 class="text-xl font-semibold mb-3">Kegiatan Saat Lomba</h2>
+            <h2 class="text-xl font-semibold mb-3">Kegiatan Malam Puncak</h2>
             <p class="text-gray-600 mb-4">
-              Dokumentasi kegiatan lomba yang penuh semangat, kerja tim, dan
-              kreativitas.
+              Dokumentasi kegiatan Malam Puncak yang meriah serta hiburan malam
             </p>
             <button
               class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"

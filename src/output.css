@@ -49,6 +49,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -226,17 +227,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-3 {
-    left: calc(var(--spacing) * 3);
-  }
   .left-8 {
     left: calc(var(--spacing) * 8);
   }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
   .left-16 {
     left: calc(var(--spacing) * 16);
-  }
-  .left-21 {
-    left: calc(var(--spacing) * 21);
   }
   .z-0 {
     z-index: 0;
@@ -246,6 +244,9 @@
   }
   .z-20 {
     z-index: 20;
+  }
+  .z-30 {
+    z-index: 30;
   }
   .z-40 {
     z-index: 40;
