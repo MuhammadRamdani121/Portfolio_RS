@@ -36,3 +36,13 @@ document.querySelectorAll(".galeri-card").forEach((card) => {
     }
   });
 });
+
+const btn = document.getElementById("menu-btn");
+const menu = document.getElementById("mobile-menu");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("max-h-0");
+  menu.classList.toggle("opacity-0");
+  menu.classList.toggle("max-h-screen");
+  menu.classList.toggle("opacity-100");
+});
