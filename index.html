@@ -16,12 +16,12 @@
   <body class="bg-white text-gray-900">
     <!-- Header -->
     <header
-      class="px-4 sm:px-6 flex justify-between items-center text-white bg-[#1A1A1A]"
+      class="flex items-center justify-between bg-[#1A1A1A] px-4 text-white sm:px-6"
     >
-      <img class="w-14 h-12" src="src/img/Logo.png" alt="Logo" />
+      <img class="h-12 w-14" src="src/img/Logo.png" alt="Logo" />
 
       <!-- Menu Desktop -->
-      <nav class="hidden md:flex space-x-4 text-md">
+      <nav class="text-md hidden space-x-4 md:flex">
         <a href="#TentangKami">Tentang Kami</a>
         <a href="#VisiMisi">Visi & Misi</a>
         <a href="#GaleriKegiatan">Galeri Kegiatan</a>
@@ -30,7 +30,7 @@
       </nav>
 
       <!-- Hamburger Button -->
-      <a id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <a id="menu-btn" class="text-white focus:outline-none md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-9 w-9"
@@ -51,7 +51,7 @@
     <!-- Mobile Menu -->
     <div
       id="mobile-menu"
-      class="max-h-0 opacity-0 overflow-hidden absolute top-[48px] left-0 w-full bg-gray-800 text-white transition-all duration-500 ease-in-out flex-col z-40"
+      class="absolute top-[48px] left-0 z-40 max-h-0 w-full flex-col overflow-hidden bg-gray-800 text-white opacity-0 transition-all duration-500 ease-in-out"
     >
       <a href="#" class="block px-4 py-3 text-lg hover:bg-gray-700"
         >Tentang Saya</a
@@ -61,44 +61,44 @@
     </div>
 
     <!-- Main Content -->
-    <main class="px-4 sm:px-6 pt-10">
+    <main class="px-4 pt-10 sm:px-6">
       <!-- Section 1: Tentang Kami -->
       <section
         id="TentangKami"
-        class="max-w-6xl mx-auto px-4 md:px-8 flex flex-col gap-8"
+        class="mx-auto flex max-w-6xl flex-col gap-8 px-4 md:px-8"
       >
         <!-- Judul -->
         <h2
-          class="bg-gradient-to-r to-gray-300/70 text-gray-800 rounded-xl text-center font-bold text-2xl md:text-3xl lg:text-4xl py-3 shadow"
+          class="rounded-xl bg-gradient-to-r to-gray-300/70 py-3 text-center text-2xl font-bold text-gray-800 shadow md:text-3xl lg:text-4xl"
         >
           Tentang Kami
         </h2>
 
         <!-- Grid Logo + Sejarah -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
           <!-- Logo -->
-          <div class="flex justify-center items-center">
-            <div class="bg-white min-h-[250px] max-w-sm">
+          <div class="flex items-center justify-center">
+            <div class="min-h-[250px] max-w-sm bg-white">
               <img
                 src="src/img/Logo.png"
                 alt="Logo"
-                class="w-75 md:w-75 h-auto mx-auto"
+                class="mx-auto h-auto w-75 md:w-75"
               />
             </div>
           </div>
 
           <!-- Card Sejarah -->
           <div
-            class="bg-white/90 rounded-2xl shadow-md hover:shadow-lg transition p-6 md:p-8 min-h-[300px]"
+            class="min-h-[300px] rounded-2xl bg-white/90 p-6 shadow-md transition hover:shadow-lg md:p-8"
           >
             <p
-              class="text-2xl md:text-xl font-bold mb-4 text-gray-800 border-b border-gray-300 pb-2 flex items-center justify-center gap-2"
+              class="mb-4 flex items-center justify-center gap-2 border-b border-gray-300 pb-2 text-2xl font-bold text-gray-800 md:text-xl"
             >
               <!-- Icon buku -->
               Sejarah
             </p>
             <p
-              class="text-justify text-sm md:text-base leading-relaxed text-gray-700 text-indent-lg"
+              class="text-indent-lg text-justify text-sm leading-relaxed text-gray-700 md:text-base"
             >
               RS’48 terbentuk pada tanggal
               <span class="font-bold">6 Januari 2017</span> sebagai sebuah
@@ -145,28 +145,28 @@
       <!-- Section 2: Visi & Misi -->
       <section
         id="VisiMisi"
-        class="max-w-6xl mx-auto px-4 md:px-8 mt-10 py-8 rounded-2xl"
+        class="mx-auto mt-10 max-w-6xl rounded-2xl px-4 py-8 md:px-8"
       >
         <!-- Judul -->
         <h1
-          class="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-6 underline"
+          class="mb-6 text-center text-2xl font-bold text-gray-800 underline md:text-3xl"
         >
           VISI & MISI
         </h1>
 
         <!-- Grid Visi & Misi -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section class="grid grid-cols-1 gap-6 md:grid-cols-2">
           <!-- Visi -->
           <article
-            class="bg-amber-200/90 rounded-2xl shadow-md hover:shadow-lg transition px-6 py-6 hyphens-auto"
+            class="rounded-2xl bg-amber-200/90 px-6 py-6 hyphens-auto shadow-md transition hover:shadow-lg"
           >
             <h2
-              class="text-center text-lg md:text-xl font-semibold mb-4 text-gray-800 border-b border-amber-400 pb-2"
+              class="mb-4 border-b border-amber-400 pb-2 text-center text-lg font-semibold text-gray-800 md:text-xl"
             >
               Visi
             </h2>
             <ol
-              class="list-decimal space-y-3 text-justify leading-relaxed pl-5 text-gray-700 text-sm md:text-base"
+              class="list-decimal space-y-3 pl-5 text-justify text-sm leading-relaxed text-gray-700 md:text-base"
             >
               <li class="indent-4">
                 Menjadi wadah utama bagi pemuda untuk berkembang, berinovasi,
@@ -186,15 +186,15 @@
 
           <!-- Misi -->
           <article
-            class="bg-red-400/90 rounded-2xl shadow-md hover:shadow-lg transition px-6 py-6 hyphens-auto"
+            class="rounded-2xl bg-red-400/90 px-6 py-6 hyphens-auto shadow-md transition hover:shadow-lg"
           >
             <h2
-              class="text-center text-lg md:text-xl font-semibold mb-4 text-white border-b border-red-600 pb-2"
+              class="mb-4 border-b border-red-600 pb-2 text-center text-lg font-semibold text-white md:text-xl"
             >
               Misi
             </h2>
             <ol
-              class="list-decimal space-y-3 text-justify leading-relaxed pl-5 text-white text-sm md:text-base"
+              class="list-decimal space-y-3 pl-5 text-justify text-sm leading-relaxed text-white md:text-base"
             >
               <li class="indent-4">
                 Meningkatkan kualitas pemuda melalui pendidikan, pelatihan, dan
@@ -215,37 +215,37 @@
 
       <!-- Start Section 3 -->
       <section id="GaleriKegiatan" class="mt-20 px-6 shadow">
-        <h1 class="text-3xl font-bold text-center mb-10 underline">
+        <h1 class="mb-10 text-center text-3xl font-bold underline">
           Galeri Kegiatan
         </h1>
         <!-- ========== CARD 1 ========== -->
         <article
-          class="group galeri-card max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6 transition mb-2"
+          class="group galeri-card mx-auto mb-2 flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow-lg transition md:flex-row"
         >
           <!-- Image Stack -->
-          <aside class="relative w-[300px] h-[180px] cursor-pointer">
+          <aside class="relative h-[180px] w-[300px] cursor-pointer">
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba1.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-30 transition-all duration-500"
+              class="galeri-img absolute top-4 left-10 z-30 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba2.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-20 transition-all duration-500"
+              class="galeri-img absolute top-0 left-8 z-20 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
             <img
               src="src/img/Kegiatan/Kegiatan_Lomba3.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-10 transition-all duration-500"
+              class="galeri-img absolute top-8 left-16 z-10 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
           </aside>
 
           <div class="flex-1 text-center md:text-left">
-            <h2 class="text-xl font-semibold mb-3">Kegiatan Saat Lomba</h2>
-            <p class="text-gray-600 mb-4">
+            <h2 class="mb-3 text-xl font-semibold">Kegiatan Saat Lomba</h2>
+            <p class="mb-4 text-gray-600">
               Dokumentasi kegiatan lomba yang penuh semangat, kerja tim, dan
               antusiasi warga untuk mengikuti acara.
             </p>
             <button
-              class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
+              class="rounded-xl bg-black px-6 py-2 text-white transition hover:border hover:border-black hover:bg-white hover:text-black"
             >
               Lihat Selengkapnya
             </button>
@@ -253,33 +253,33 @@
         </article>
         <!-- ========== CARD 2 ========== -->
         <article
-          class="group galeri-card max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6 transition mb-2"
+          class="group galeri-card mx-auto mb-2 flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow-lg transition md:flex-row"
         >
-          <aside class="relative w-[300px] h-[180px] cursor-pointer">
+          <aside class="relative h-[180px] w-[300px] cursor-pointer">
             <img
               src="src/img/Karnaval/1.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-20 transition-all duration-500"
+              class="galeri-img absolute top-4 left-10 z-20 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
 
             <img
               src="src/img/Karnaval/2.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-10 transition-all duration-500"
+              class="galeri-img absolute top-0 left-8 z-10 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
 
             <img
               src="src/img/Karnaval/3.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-0 transition-all duration-500"
+              class="galeri-img absolute top-8 left-16 z-0 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
           </aside>
 
           <div class="flex-1 text-center md:text-left">
-            <h2 class="text-xl font-semibold mb-3">Kegiatan Saat Karnaval</h2>
-            <p class="text-gray-600 mb-4">
+            <h2 class="mb-3 text-xl font-semibold">Kegiatan Saat Karnaval</h2>
+            <p class="mb-4 text-gray-600">
               Dokumentasi kegiatan Karnaval seluruh warga antusiasi dalam
               mengikuti Karnaval tahunan
             </p>
             <button
-              class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
+              class="rounded-xl bg-black px-6 py-2 text-white transition hover:border hover:border-black hover:bg-white hover:text-black"
             >
               Lihat Selengkapnya
             </button>
@@ -287,32 +287,32 @@
         </article>
         <!-- ========== CARD 3 ========== -->
         <article
-          class="group galeri-card max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center gap-6 transition"
+          class="group galeri-card mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-2xl bg-white p-6 shadow-lg transition md:flex-row"
         >
-          <aside class="relative w-[300px] h-[180px] cursor-pointer">
+          <aside class="relative h-[180px] w-[300px] cursor-pointer">
             <img
               src="src/img/Malam Puncak/1.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-10 top-4 z-20 transition-all duration-500"
+              class="galeri-img absolute top-4 left-10 z-20 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
 
             <img
               src="src/img/Malam Puncak/2.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-8 top-0 z-10 transition-all duration-500"
+              class="galeri-img absolute top-0 left-8 z-10 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
 
             <img
               src="src/img/Malam Puncak/3.webp"
-              class="galeri-img object-cover w-[200px] h-[140px] rounded-xl shadow-md absolute left-16 top-8 z-0 transition-all duration-500"
+              class="galeri-img absolute top-8 left-16 z-0 h-[140px] w-[200px] rounded-xl object-cover shadow-md transition-all duration-500"
             />
           </aside>
 
           <div class="flex-1 text-center md:text-left">
-            <h2 class="text-xl font-semibold mb-3">Kegiatan Malam Puncak</h2>
-            <p class="text-gray-600 mb-4">
+            <h2 class="mb-3 text-xl font-semibold">Kegiatan Malam Puncak</h2>
+            <p class="mb-4 text-gray-600">
               Dokumentasi kegiatan Malam Puncak yang meriah serta hiburan malam
             </p>
             <button
-              class="bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
+              class="rounded-xl bg-black px-6 py-2 text-white transition hover:border hover:border-black hover:bg-white hover:text-black"
             >
               Lihat Selengkapnya
             </button>
@@ -323,12 +323,12 @@
 
       <!-- Start Section 4 -->
       <section id="GaleriFoto" class="mt-20 shadow-2xl">
-        <h1 class="text-3xl font-bold text-center mb-10 underline">
+        <h1 class="mb-10 text-center text-3xl font-bold underline">
           Galeri Foto Personil
         </h1>
 
         <div
-          class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 shadow-2xs"
+          class="mx-auto grid max-w-5xl grid-cols-2 gap-6 px-4 shadow-2xs sm:grid-cols-2 md:grid-cols-2"
         >
           <!-- Card 1 -->
           <div class="flex flex-col items-center rounded-lg">
@@ -336,12 +336,12 @@
               src="src/img/Anggota/Andre.webp"
               loading="lazy"
               alt="Ketua"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
             />
-            <nav class="shadow rounded-lg">
+            <nav class="rounded-lg shadow">
               <p class="mt-2 text-center text-gray-700">Ketua</p>
               <ul
-                class="grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 break-words hyphens-auto leading-relaxed whitespace-normal ml-2"
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
               >
                 <li class="contents">
                   <span class="font-medium">Nama</span>
@@ -366,7 +366,7 @@
               src="src/img/Anggota/Dito.webp"
               loading="lazy"
               alt="Wakil"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
             />
             <p class="mt-2 text-center text-gray-700">Wakil</p>
           </div>
@@ -377,7 +377,7 @@
               src="src/img/Anggota/Bendahara1.webp"
               loading="lazy"
               alt="Bendahara 1"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
             />
             <p class="mt-2 text-center text-gray-700">Bendahara 1</p>
           </div>
@@ -388,9 +388,34 @@
               src="src/img/Anggota/Bendahara2.webp"
               loading="lazy"
               alt="Bendahara 2"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
             />
             <p class="mt-2 text-center text-gray-700">Bendahara 2</p>
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Ryan (Becung)</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Sesuatu yang dibalas kebaikan, maka kebaikan juga yang
+                    didatangkan , Jika tidak langsung saat itu juga nanti pasti
+                    ada waktunya dan Segala sesuatu yang berputar akan selalu
+                    berputar Namun ingatlah suatu hal "Jangan pernah berhenti
+                    untuk berbuat baik dan teruslah berbuat kebaikan untuk orang
+                    orang meskipun kadang kebaikan kita tidak dihargai "
+                  </span>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           <!-- Card 5 -->
@@ -399,9 +424,29 @@
               src="src/img/Anggota/Sekretaris.webp"
               loading="lazy"
               alt="Sekretaris"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover object-bottom bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover object-bottom shadow-md"
             />
             <p class="mt-2 text-center text-gray-700">Sekretaris</p>
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>M.Ramdani</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Kalo orang lain bisa, Kenapa harus kita?
+                  </span>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           <!-- Card 6 -->
@@ -410,26 +455,27 @@
               src="src/img/Anggota/Seksi Gelap.webp"
               loading="lazy"
               alt="Seksi Gelap"
-              class="w-full aspect-[3/4] max-w-[350px] rounded-lg shadow-md object-cover bg-gray-100"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
             />
             <p class="mt-2 text-center text-gray-700">Seksi Gelap</p>
           </div>
 
           <!-- Card 7: Full width di mobile -->
-          <div class="flex flex-col items-center col-span-2 md:col-span-2">
+          <div class="col-span-2 flex flex-col items-center md:col-span-2">
             <img
               src="src/img/Anggota/Anggota.webp"
               loading="lazy"
-              alt="Anggota Lainnya"
-              class="w-full md:h-[400px] md:w-auto rounded-lg shadow-md object-contain bg-gray-100"
+              alt="anggota Lainnya"
+              class="w-full rounded-lg bg-gray-100 object-contain shadow-md md:h-[400px] md:w-auto"
             />
             <p class="mt-2 text-center text-gray-700">Anggota</p>
           </div>
         </div>
-        <nav class="mt-6 text-end mr-5">
+        <nav class="mt-6 mr-5 text-end">
           <p>Penasaran Sama yang lainnya?</p>
           <button
-            class="mb-6 bg-black text-white px-6 py-2 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition"
+            id="anggota_lainnya"
+            class="mb-6 rounded-xl bg-black px-6 py-2 text-white transition hover:border hover:border-black hover:bg-white hover:text-black"
           >
             Lihat Selengkapnya
           </button>
@@ -440,20 +486,20 @@
       <!-- Start Section 5 -->
 
       <section id="Kontak" class="mt-20 shadow-2xl">
-        <h2 class="text-3xl font-bold text-center mb-10 underline">
+        <h2 class="mb-10 text-center text-3xl font-bold underline">
           Hubungi Kami
         </h2>
 
         <div
-          class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4"
+          class="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 md:grid-cols-2"
         >
           <!-- Google Maps -->
           <div
-            class="w-full h-[300px] sm:h-[350px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg"
+            class="h-[300px] w-full overflow-hidden rounded-2xl shadow-lg sm:h-[350px] md:h-[400px]"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!4v1756214430986!6m8!1m7!1s8tiTOkhO2dKSPGQ8IKx7vg!2m2!1d-6.336197005940695!2d106.7087095921457!3f193.17530753659202!4f-17.50659712879039!5f0.7820865974627469"
-              class="w-full h-full"
+              class="h-full w-full"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -464,15 +510,15 @@
 
           <!-- Info Alamat -->
           <div
-            class="flex flex-col justify-start bg-white rounded-2xl shadow-lg p-8"
+            class="flex flex-col justify-start rounded-2xl bg-white p-8 shadow-lg"
           >
             <!-- Judul -->
-            <h2 class="text-2xl font-semibold text-center mb-6 text-gray-800">
+            <h2 class="mb-6 text-center text-2xl font-semibold text-gray-800">
               Alamat
             </h2>
 
             <!-- Isi alamat -->
-            <p class="text-gray-600 mb-6 text-center leading-relaxed">
+            <p class="mb-6 text-center leading-relaxed text-gray-600">
               Jl. Swadaya, RT 04 / RW 08 <br />
               Pamulang, Kota Tangerang Selatan, Banten, Indonesia
             </p>
@@ -480,16 +526,16 @@
             <!-- Kontak -->
             <div class="flex justify-center">
               <div
-                class="grid grid-cols-[110px_1fr] gap-y-4 gap-x-2 text-gray-700"
+                class="grid grid-cols-[110px_1fr] gap-x-2 gap-y-4 text-gray-700"
               >
                 <p class="font-medium">Telepon</p>
-                <p class="hover:text-blue-600 transition">: 0812-3456-7890</p>
+                <p class="transition hover:text-blue-600">: 0812-3456-7890</p>
 
                 <p class="font-medium">Email</p>
-                <p class="hover:text-blue-600 transition">: email@gmail.com</p>
+                <p class="transition hover:text-blue-600">: email@gmail.com</p>
 
                 <p class="font-medium">Instagram</p>
-                <p class="hover:text-blue-600 transition">: instagram</p>
+                <p class="transition hover:text-blue-600">: instagram</p>
               </div>
             </div>
           </div>
@@ -498,16 +544,16 @@
       <!-- End Section 5 -->
 
       <!-- Footer -->
-      <footer class="bg-gray-800 text-gray-200 mt-12 rounded-t-2xl">
+      <footer class="mt-12 rounded-t-2xl bg-gray-800 text-gray-200">
         <div
-          class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8"
+          class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 md:grid-cols-3"
         >
           <!-- Kolom 1: Logo & Deskripsi -->
           <div class="flex flex-col items-center md:items-center">
-            <img src="src/img/Logo.png" alt="Logo" class="w-20 h-16 mb-3" />
-            <h3 class="font-bold text-lg">Remaja Republic Swad</h3>
+            <img src="src/img/Logo.png" alt="Logo" class="mb-3 h-16 w-20" />
+            <h3 class="text-lg font-bold">Remaja Republic Swad</h3>
             <p
-              class="text-sm mt-2 text-gray-400 text-center md:text-justify md:px-4"
+              class="mt-2 text-center text-sm text-gray-400 md:px-4 md:text-justify"
             >
               Wadah kebersamaan pemuda untuk berkarya, berinovasi, dan membangun
               bangsa.
@@ -516,25 +562,25 @@
 
           <!-- Kolom 2: Navigasi -->
           <div class="flex flex-col items-center">
-            <h4 class="font-semibold text-base mb-3">Navigasi</h4>
-            <ul class="space-y-2 text-gray-400 text-center">
+            <h4 class="mb-3 text-base font-semibold">Navigasi</h4>
+            <ul class="space-y-2 text-center text-gray-400">
               <li>
-                <a href="#TentangKami" class="hover:text-white transition"
+                <a href="#TentangKami" class="transition hover:text-white"
                   >Tentang Kami</a
                 >
               </li>
               <li>
-                <a href="#VisiMisi" class="hover:text-white transition"
+                <a href="#VisiMisi" class="transition hover:text-white"
                   >Visi & Misi</a
                 >
               </li>
               <li>
-                <a href="#GaleriKegiatan" class="hover:text-white transition"
+                <a href="#GaleriKegiatan" class="transition hover:text-white"
                   >Galeri Kegiatan</a
                 >
               </li>
               <li>
-                <a href="#GaleriFoto" class="hover:text-white transition"
+                <a href="#GaleriFoto" class="transition hover:text-white"
                   >Galeri Personil</a
                 >
               </li>
@@ -543,11 +589,11 @@
 
           <!-- Kolom 3: Kontak -->
           <div class="flex flex-col items-center md:items-start">
-            <h4 class="font-semibold text-base mb-3">Kontak</h4>
-            <p class="text-gray-400 text-center px-6">
+            <h4 class="mb-3 text-base font-semibold">Kontak</h4>
+            <p class="px-6 text-center text-gray-400">
               Jl. Swadaya, RT 04 / RW 08, Pamulang, Tangerang Selatan
             </p>
-            <p class="text-gray-400 pt-2">📞 0812-3456-7890</p>
+            <p class="pt-2 text-gray-400">📞 0812-3456-7890</p>
             <p class="text-gray-400">✉️ email@gmail.com</p>
             <p class="text-gray-400">📷 Instagram</p>
           </div>
@@ -555,7 +601,7 @@
 
         <!-- Copyright -->
         <div
-          class="border-t border-gray-700 text-center py-4 text-sm text-gray-400"
+          class="border-t border-gray-700 py-4 text-center text-sm text-gray-400"
         >
           © 2025 Organisasi Pemuda. All rights reserved.
         </div>

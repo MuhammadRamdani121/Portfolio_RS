@@ -1,11 +1,11 @@
-const buttons = document.querySelectorAll("button");
+// const buttons = document.querySelectorAll("button");
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation(); // biar klik button nggak toggle card
-    alert("Lagi Maintance cuy");
-  });
-});
+// buttons.forEach((btn) => {
+//   btn.addEventListener("click", (e) => {
+//     e.stopPropagation(); // biar klik button nggak toggle card
+//     alert("Lagi Maintance cuy");
+//   });
+// });
 
 document.querySelectorAll(".galeri-card").forEach((card) => {
   const imgs = card.querySelectorAll(".galeri-img");
@@ -42,12 +42,39 @@ document.querySelectorAll(".galeri-card").forEach((card) => {
     }
   });
 });
-const menubtn = document.getElementById("menu-btn");
-const menu = document.getElementById("mobile-menu");
+// ========== MENU DROPDOWN (INDEX) ==========
+const dropdownBtn = document.getElementById("menu-btn");
+const dropdownMenu = document.getElementById("mobile-menu");
 
-menubtn.addEventListener("click", () => {
-  menu.classList.toggle("max-h-0");
-  menu.classList.toggle("opacity-0");
-  menu.classList.toggle("max-h-screen");
-  menu.classList.toggle("opacity-100");
-});
+if (dropdownBtn && dropdownMenu) {
+  dropdownBtn.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("max-h-0");
+    dropdownMenu.classList.toggle("opacity-0");
+    dropdownMenu.classList.toggle("max-h-screen");
+    dropdownMenu.classList.toggle("opacity-100");
+  });
+}
+
+const sidebarBtn = document.getElementById("sidebar-btn");
+const sidebarMenu = document.getElementById("sidebar-menu");
+
+if (sidebarBtn && sidebarMenu) {
+  sidebarBtn.addEventListener("click", () => {
+    const isOpen = sidebarMenu.classList.contains("translate-x-0");
+
+    if (isOpen) {
+      sidebarMenu.classList.remove("translate-x-0");
+      sidebarMenu.classList.add("translate-x-full");
+    } else {
+      sidebarMenu.classList.remove("translate-x-full");
+      sidebarMenu.classList.add("translate-x-0");
+    }
+  });
+}
+
+const anggotalainnya = document.getElementById("anggota_lainnya");
+if (anggotalainnya) {
+  anggotalainnya.addEventListener("click", () => {
+    window.location.href = "anggota.html";
+  });
+}

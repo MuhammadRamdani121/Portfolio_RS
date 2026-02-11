@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anggota Lainnya</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-100 font-[Inter]">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 right-0 left-0 z-50 flex items-center justify-between bg-[#1A1A1A] px-4 py-3 text-white"
+    >
+      <div class="flex items-center gap-3">
+        <img class="h-10 w-12" src="src/img/Logo.png" alt="Logo" />
+        <h1 class="text-lg font-semibold">Anggota Lainnya</h1>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="sidebar-btn" class="focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-8 w-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <!-- SIDEBAR -->
+    <aside
+      id="sidebar-menu"
+      class="fixed top-0 right-0 z-40 h-full w-72 translate-x-full transform bg-gray-900 text-white shadow-lg transition-transform duration-300 ease-in-out"
+    >
+      <div class="space-y-4 p-6">
+        <h2 class="mb-4 text-xl font-semibold">Menu</h2>
+        <a href="index.html" class="block hover:text-blue-400">Beranda</a>
+        <a href="#TentangKami" class="block hover:text-blue-400"
+          >Tentang Kami</a
+        >
+        <a href="#GaleriKegiatan" class="block hover:text-blue-400"
+          >Galeri Kegiatan</a
+        >
+        <a href="#GaleriFoto" class="block hover:text-blue-400"
+          >Galeri Personil</a
+        >
+        <a href="#Kontak" class="block hover:text-blue-400">Kontak</a>
+      </div>
+    </aside>
+
+    <!-- KONTEN -->
+    <main class="px-4 pt-10 sm:px-6">
+      <!-- Start Section 4 -->
+      <section id="GaleriFoto" class="mt-20 shadow-2xl">
+        <h1 class="mb-10 text-center text-3xl font-bold underline">
+          Galeri Foto Personil
+        </h1>
+
+        <div
+          class="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-4 shadow-2xs md:grid-cols-3"
+        >
+          <!-- Card 1 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota/Andre.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="flex flex-col items-center shadow-2xl">
+            <img
+              src="src/img/Anggota/Dito.webp"
+              loading="lazy"
+              alt="Wakil"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <p class="mt-2 text-center text-gray-700">Wakil</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="src/img/Anggota/Bendahara1.webp"
+              loading="lazy"
+              alt="Bendahara 1"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <p class="mt-2 text-center text-gray-700">Bendahara 1</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="src/img/Anggota/Bendahara2.webp"
+              loading="lazy"
+              alt="Bendahara 2"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <p class="mt-2 text-center text-gray-700">Bendahara 2</p>
+            <nav class="rounded-lg shadow">
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Ryan (Becung)</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Sesuatu yang dibalas kebaikan, maka kebaikan juga yang
+                    didatangkan , Jika tidak langsung saat itu juga nanti pasti
+                    ada waktunya dan Segala sesuatu yang berputar akan selalu
+                    berputar Namun ingatlah suatu hal "Jangan pernah berhenti
+                    untuk berbuat baik dan teruslah berbuat kebaikan untuk orang
+                    orang meskipun kadang kebaikan kita tidak dihargai "
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="src/img/Anggota/Sekretaris.webp"
+              loading="lazy"
+              alt="Sekretaris"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover object-bottom shadow-md"
+            />
+            <p class="mt-2 text-center text-gray-700">Sekretaris</p>
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>M.Ramdani</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Kalo orang lain bisa, Kenapa harus kita?
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="flex flex-col items-center">
+            <img
+              src="src/img/Anggota/Seksi Gelap.webp"
+              loading="lazy"
+              alt="Seksi Gelap"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <p class="mt-2 text-center text-gray-700">Seksi Gelap</p>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/7.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/8.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/9.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/10.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/11.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/12.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 13 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/13.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 14 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/14.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 15 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/15.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 16 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/16.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 17 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/17.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 18 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/18.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 19 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/19.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 20 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/20.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 21 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/21.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 22 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/22.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 23 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/23.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 24 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/24.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 25 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/25.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Card 26 -->
+          <div class="flex flex-col items-center rounded-lg">
+            <img
+              src="src/img/Anggota Lainnya/26.webp"
+              loading="lazy"
+              alt="Ketua"
+              class="aspect-[3/4] w-full max-w-[350px] rounded-lg bg-gray-100 object-cover shadow-md"
+            />
+            <nav class="rounded-lg shadow">
+              <p class="mt-2 text-center text-gray-700">Ketua</p>
+              <ul
+                class="ml-2 grid grid-cols-[auto_auto_1fr] gap-x-2 gap-y-1 leading-relaxed break-words hyphens-auto whitespace-normal"
+              >
+                <li class="contents">
+                  <span class="font-medium">Nama</span>
+                  <span>:</span>
+                  <span>Andre Pratama</span>
+                </li>
+
+                <li class="contents">
+                  <span class="font-medium">Motto</span>
+                  <span>:</span>
+                  <span class="leading-relaxed">
+                    Pernah Bertemu namun ceritanya terlalu singkat
+                  </span>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!-- End Section 4 -->
+    </main>
+    <!-- JS -->
+    <script src="card.js"></script>
+  </body>
+</html>
