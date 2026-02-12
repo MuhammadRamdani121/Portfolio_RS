@@ -408,6 +408,12 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-\[250px\] {
+    max-width: 250px;
+  }
+  .max-w-\[300px\] {
+    max-width: 300px;
+  }
   .max-w-\[350px\] {
     max-width: 350px;
   }
